@@ -1,5 +1,3 @@
-require('pdf.js/src/display/text_layer');
-
 PDFJS.workerSrc = './pdf.worker.js';
 PDFJS.getDocument('example.pdf').then(pdf => {
   pdf.getPage(1).then(page => {
