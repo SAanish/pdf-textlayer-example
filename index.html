@@ -4,21 +4,12 @@
   <meta charset="utf-8"/>
   <title>PDFJS TextLayer Example</title>
   <style type="text/css">
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       background: #eee;
       font-family: Helvetica Neue, arial, sans-serif;
       width: 614px;
       margin: 25px auto;
-    }
-
-    #canvas, #container {
-      background: #fff;
-      border: 1px solid #ccc;
-      overflow: auto;
+      position: relative;
     }
 
     hr {
@@ -36,22 +27,23 @@
     code {
       text-shadow: 1px 1px #fff;
     }
+
+    #container {
+      background: #fff;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 61px;
+    }
+
+    #container > div {
+      position: absolute;
+    }
   </style>
 </head>
 <body>
   <h1>PDFJS TextLayer Example</h1>
-  <p>I am trying to render the text content of a PDF to allow selection, copying, etc.</p>
-
-  <h3>PDFJS.render</h3>
-  <p>The output of <code>PDFJS.render</code> looks the same as the original PDF 😀</p>
   <canvas id="canvas"></canvas>
-
-  <hr/>
-
-  <h3>PDFJS.renderTextLayer</h3>
-  <p>The result of <code>PDFJS.renderTextLayer</code> produces the content, but the format is wrong 😞</p>
   <div id="container"></div>
-
   <script src="pdf.js"></script>
   <script src="bundle.js"></script>
 </body>
