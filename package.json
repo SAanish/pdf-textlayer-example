@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cp ./node_modules/pdfjs-dist/build/pdf.worker.js ./ && cp ./node_modules/pdfjs-dist/build/pdf.js ./ && ./node_modules/.bin/webpack-dev-server --inline --content-base ./"
+    "start": "cp ./node_modules/pdfjs-dist/build/pdf.worker.js ./ && cp ./node_modules/pdfjs-dist/build/pdf.js ./ && cp ./node_modules/pdfjs-dist/web/pdf_viewer.css ./ && ./node_modules/.bin/webpack-dev-server --inline --content-base ./"
   },
   "author": "Matt Zabriskie <mzabriskie@gmail.com> (http://mattzabriskie.com)",
   "license": "MIT",

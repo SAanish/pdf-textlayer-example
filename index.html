@@ -3,47 +3,22 @@
 <head>
   <meta charset="utf-8"/>
   <title>PDFJS TextLayer Example</title>
+  <link rel="stylesheet" type="text/css" href="pdf_viewer.css"/>
   <style type="text/css">
     body {
       background: #eee;
       font-family: Helvetica Neue, arial, sans-serif;
-      width: 614px;
       margin: 25px auto;
       position: relative;
     }
 
-    hr {
-      margin: 20px 0;
-      height: 1px;
-      border: 0 none;
-      border-bottom: 1px solid #ccc;
-    }
-
-    h3 {
-      font-family: monospace;
-      font-size: 150%;
-    }
-
-    code {
-      text-shadow: 1px 1px #fff;
-    }
-
-    #container {
-      background: #fff;
-      border: 1px solid #ccc;
-      position: absolute;
-      top: 61px;
-    }
-
-    #container > div {
-      position: absolute;
+    .pdfViewer .canvasWrapper {
+      box-shadow: 0 0 3px #bbb;
     }
   </style>
 </head>
 <body>
-  <h1>PDFJS TextLayer Example</h1>
-  <canvas id="canvas"></canvas>
-  <div id="container"></div>
+  <div id="viewer" class="pdfViewer"></div>
   <script src="pdf.js"></script>
   <script src="bundle.js"></script>
 </body>
